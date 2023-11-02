@@ -2,8 +2,8 @@ import prisma from "../../lib/prisma";
 
 export async function GET() {
   try {
-    const educations = await prisma.contact.findMany();
-    return Response.json(educations)
+    const contact = await prisma.contact.findMany();
+    return Response.json(contact)
   }
 
   catch (error) {
